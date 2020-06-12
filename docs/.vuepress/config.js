@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/potori/intro/',
+  base: '/potori-docs/',
   title: 'Potori Docs',
   description: 'Documents for Potori',
   dest: 'dist',
