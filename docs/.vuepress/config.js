@@ -1,6 +1,8 @@
 module.exports = {
+  base: '/potori/intro/',
   title: 'Potori Docs',
   description: 'Documents for Potori',
+  dest: 'dist',
   locales: {
     '/': {
       lang: 'en-US',
