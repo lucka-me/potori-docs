@@ -1,2 +1,2 @@
-# potori-docs
-Documents for Potori
+# Potori Docs
+Documents for [Potori](https://lucka.moe/potori/).

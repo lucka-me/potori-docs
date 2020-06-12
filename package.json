@@ -1,0 +1,19 @@
+{
+  "name": "potori-docs",
+  "version": "0.7.0",
+  "description": "Documents for Potori",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:lucka-me/potori-docs.git"
+  },
+  "author": "lucka-me",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.1"
+  }
+}
