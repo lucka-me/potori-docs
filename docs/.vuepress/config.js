@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/potori-docs/',
+  base: '/potori/intro/',
   title: 'Potori Docs',
   description: 'Documents for Potori',
   dest: 'dist',
@@ -32,6 +32,7 @@ module.exports = {
           { text: 'Auth', link: '/auth/' },
           { text: 'Usage', link: '/usage/' },
           { text: 'Privacy', link: '/privacy/' },
+          { text: 'Repo', link: 'https://github.com/lucka-me/potori' },
           {
             text: 'More',
             items: [
@@ -59,6 +60,7 @@ module.exports = {
           { text: '验证', link: '/zh-CN/auth/' },
           { text: '使用', link: '/zh-CN/usage/' },
           { text: '隐私', link: '/zh-CN/privacy/' },
+          { text: '仓库', link: 'https://github.com/lucka-me/potori' },
           {
             text: '了解更多',
             items: [

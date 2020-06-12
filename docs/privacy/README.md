@@ -5,7 +5,7 @@ sidebar: auto
 # Privacy
 Briefly, Potori would not collect any of your data. All of your data will be handled inside your browser, and deleted when you close the page. You can save your data in your own Google Drive (where only Potori can access) or locally, they are totally under your control.
 
-We are trying to protect your privacy with my knowledge, if you have any suggestion, please feel free to [open an issue](https://github.com/lucka-me/potori/issues) or [contact us](../contributors).
+We are trying to protect your privacy with my knowledge, if you have any suggestion, please feel free to [open an issue](https://github.com/lucka-me/potori/issues) or [contact us](../contribute#Contributors).
 
 ## Data Usage
 Potori will use following data of yours:
