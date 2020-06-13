@@ -6,7 +6,7 @@ sidebar: auto
 Potori需要从您的Gmail邮箱中获取与能量塔提名相关的邮件，因此您必须登录您的Google账号才能使用。
 
 ## 权限
-Potori requires the following permissions:
+Potori将请求以下权限：
 
 ### Gmail：只读
 ***必需***
