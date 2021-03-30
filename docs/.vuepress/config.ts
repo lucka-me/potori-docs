@@ -20,17 +20,17 @@ const themeConfig: DefaultThemeOptions = {
                 },
             ]
         },
-        '/zh-CN/': {
+        '/zh/': {
             selectLanguageText: '选择语言',
-            selectLanguageName: '简体中文',
+            selectLanguageName: '中文',
             navbar: [
-                { text: '验证', link: '/zh-CN/auth/' },
-                { text: '使用', link: '/zh-CN/usage/' },
-                { text: '隐私', link: '/zh-CN/privacy/' },
+                { text: '验证', link: '/zh/auth/' },
+                { text: '使用', link: '/zh/usage/' },
+                { text: '隐私', link: '/zh/privacy/' },
                 {
                     text: '了解更多',
                     children: [
-                        { text: '贡献', link: '/zh-CN/contribute/' },
+                        { text: '贡献', link: '/zh/contribute/' },
                         { text: '许可', link: 'https://github.com/lucka-me/potori/blob/main/LICENSE' },
                         { text: '更新日志', link: 'https://github.com/lucka-me/potori/blob/main/CHANGELOG.md' },
                     ],
@@ -51,8 +51,8 @@ const userConfig: UserConfig = {
             title: 'Potori Docs',
             description: 'Documents for Potori'
         },
-        '/zh-CN/': {
-            lang: 'zh-CN',
+        '/zh/': {
+            lang: 'zh',
             title: 'Potori文档',
             description: 'Potori的文档'
         }
