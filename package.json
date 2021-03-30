@@ -4,9 +4,8 @@
   "description": "Documents for Potori",
   "main": "index.js",
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
-    "deploy": "gh-pages -d dist -m \"Deploy $(date)\""
+    "start": "vuepress dev docs",
+    "build": "vuepress build docs"
   },
   "repository": {
     "type": "git",
@@ -14,8 +13,7 @@
   },
   "author": "lucka-me",
   "license": "MIT",
-  "devDependencies": {
-    "gh-pages": "^3.0.0",
-    "vuepress": "^1.5.1"
+  "dependencies": {
+    "vuepress": "^2.0.0-beta.6"
   }
 }
