@@ -44,7 +44,7 @@ const userConfig: UserConfig = {
     base: '/docs/',
     title: 'Potori Docs',
     description: 'Documents for Potori',
-    dest: 'dist/docs',
+    dest: 'dist',
     locales: {
         '/': {
             lang: 'en-US',
