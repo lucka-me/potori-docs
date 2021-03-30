@@ -1,14 +1,9 @@
----
-sidebar: auto
----
-
 # Contribute
-Contributing to Potori is easy since we have lots to improve, including:
+You're welcomed to contribute to Potori since we still have lots to improve, including:
 
 - Mail samples to improve the filters of mails and keywords for new reasons
-- Webpack improvement
-- Bug report or fix
-- Any advice like new cards or features
+- Bug report and fix
+- Any advice like new charts or features
 
 ## Contributors
 For now, the repository owner and main contributor is [Lucka](#Lucka).
