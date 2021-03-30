@@ -9,11 +9,11 @@ actions:
   - text: App Store
     link: https://apps.apple.com/app/id1552339183
 features:
-  - title: 基于Gmail
-    details: 从Gmail中解析提名，支持Scanner [REDACTED]和Prime。
-  - title: 可视化
-    details: 显示卡片、地图和多种数据图表，以类型和原因进行筛选。
-  - title: 辅以Brainstorming
-    details: 统计Brainstorming数据库中的评价。
+  - title: 数据来源
+    details: Gmail收件箱中与提名相关的邮件，支持Scanner [REDACTED]和Prime。
+  - title: 信息
+    details: 标题，扫描器，状态，确认和结束时间，拒绝理由和位置。
+  - title: 平台
+    details: 可于任何现代浏览器上使用的网页应用，以及iOS和macOS的原生应用。
 footer: MIT Licensed | Copyright © 2019- Lucka
 ---
