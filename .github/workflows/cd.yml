@@ -1,0 +1,26 @@
+name: CD
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2.1.5
+        with:
+          node-version: 12.x
+      - name: Initiate
+        run: npm ci
+      - name: Build Documents
+        run: npm run build
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3.8.0
+        with:
+          personal_token: ${{ secrets.DEPLOY_TOKEN }}
+          publish_dir: ./dist
+          external_repository: lucka-me/potori
+          destination_dir: docs
