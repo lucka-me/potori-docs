@@ -1,80 +1,65 @@
-module.exports = {
-  base: '/potori/docs/',
-  title: 'Potori Docs',
-  description: 'Documents for Potori',
-  dest: 'dist',
-  locales: {
-    '/': {
-      lang: 'en-US',
-      title: 'Potori Docs',
-      description: 'Documents for Potori'
-    },
-    '/zh-CN/': {
-      lang: 'zh-CN',
-      title: 'Potori文档',
-      description: 'Potori的文档'
-    }
-  },
-  themeConfig: {
-    search: false,
+import { defineUserConfig, UserConfig, DefaultThemeOptions } from 'vuepress';
+
+const themeConfig: DefaultThemeOptions = {
+    repo: 'lucka-me/potori',
     locales: {
-      '/': {
-        selectText: 'Languages',
-        label: 'English',
-        ariaLabel: 'Languages',
-        serviceWorker: {
-          updatePopup: {
-            message: "New content is available.",
-            buttonText: "Refresh"
-          }
+        '/': {
+            selectLanguageText: 'Languages',
+            selectLanguageName: 'English',
+            navbar: [
+                { text: 'Auth', link: '/auth/' },
+                { text: 'Usage', link: '/usage/' },
+                { text: 'Privacy', link: '/privacy/' },
+                {
+                    text: 'More',
+                    children: [
+                        { text: 'Contribute', link: '/contribute/' },
+                        { text: 'License', link: 'https://github.com/lucka-me/potori/blob/master/LICENSE' },
+                        { text: 'Changelog', link: 'https://github.com/lucka-me/potori/blob/master/CHANGELOG.md' },
+                    ]
+                },
+            ]
         },
-        nav: [
-          { text: 'Auth', link: '/auth/' },
-          { text: 'Usage', link: '/usage/' },
-          { text: 'Privacy', link: '/privacy/' },
-          { text: 'Repo', link: 'https://github.com/lucka-me/potori' },
-          {
-            text: 'More',
-            items: [
-              { text: 'Contribute', link: '/contribute/' },
-              { text: 'License', link: 'https://github.com/lucka-me/potori/blob/master/LICENSE' },
-              { text: 'Changelog', link: 'https://github.com/lucka-me/potori/blob/master/CHANGELOG.md' },
-            ],
-          },
-        ],
-        sidebar: {
-          '/': [/* ... */],
-          '/nested/': [/* ... */]
-        }
-      },
-      '/zh-CN/': {
-        selectText: '选择语言',
-        label: '简体中文',
-        serviceWorker: {
-          updatePopup: {
-            message: "新内容可用",
-            buttonText: "刷新"
-          }
+        '/zh-CN/': {
+            selectLanguageText: '选择语言',
+            selectLanguageName: '简体中文',
+            navbar: [
+                { text: '验证', link: '/zh-CN/auth/' },
+                { text: '使用', link: '/zh-CN/usage/' },
+                { text: '隐私', link: '/zh-CN/privacy/' },
+                {
+                    text: '了解更多',
+                    children: [
+                        { text: '贡献', link: '/zh-CN/contribute/' },
+                        { text: '许可', link: 'https://github.com/lucka-me/potori/blob/main/LICENSE' },
+                        { text: '更新日志', link: 'https://github.com/lucka-me/potori/blob/main/CHANGELOG.md' },
+                    ],
+                },
+            ]
         },
-        nav: [
-          { text: '验证', link: '/zh-CN/auth/' },
-          { text: '使用', link: '/zh-CN/usage/' },
-          { text: '隐私', link: '/zh-CN/privacy/' },
-          { text: '仓库', link: 'https://github.com/lucka-me/potori' },
-          {
-            text: '了解更多',
-            items: [
-              { text: '贡献', link: '/zh-CN/contribute/' },
-              { text: 'License', link: 'https://github.com/lucka-me/potori/blob/master/LICENSE' },
-              { text: 'Changelog', link: 'https://github.com/lucka-me/potori/blob/master/CHANGELOG.md' },
-            ],
-          },
-        ],
-        sidebar: {
-          '/zh-CN/': [/* ... */],
-          '/zh-CN/nested/': [/* ... */]
-        },
-      },
-    },
-  },
+    }
 };
+
+const userConfig: UserConfig = {
+    base: '/docs/',
+    title: 'Potori Docs',
+    description: 'Documents for Potori',
+    dest: 'dist/docs',
+    locales: {
+        '/': {
+            lang: 'en-US',
+            title: 'Potori Docs',
+            description: 'Documents for Potori'
+        },
+        '/zh-CN/': {
+            lang: 'zh-CN',
+            title: 'Potori文档',
+            description: 'Potori的文档'
+        }
+    },
+    themeConfig: themeConfig
+};
+
+const config = defineUserConfig(userConfig);
+
+export default config;
