@@ -1,8 +1,4 @@
----
-sidebar: auto
----
-
-# Auth
+# Account
 Potori will obtain your mails related to Portal nominations from your Gmail inbox, so you must login with your Google account to use it.
 
 ## Permissions

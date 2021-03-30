@@ -7,7 +7,7 @@ const themeConfig: DefaultThemeOptions = {
             selectLanguageText: 'Languages',
             selectLanguageName: 'English',
             navbar: [
-                { text: 'Auth', link: '/auth/' },
+                { text: 'Account', link: '/account/' },
                 { text: 'Usage', link: '/usage/' },
                 { text: 'Privacy', link: '/privacy/' },
                 {
@@ -24,7 +24,7 @@ const themeConfig: DefaultThemeOptions = {
             selectLanguageText: '选择语言',
             selectLanguageName: '中文',
             navbar: [
-                { text: '验证', link: '/zh/auth/' },
+                { text: '帐号', link: '/zh/account/' },
                 { text: '使用', link: '/zh/usage/' },
                 { text: '隐私', link: '/zh/privacy/' },
                 {
