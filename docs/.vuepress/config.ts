@@ -1,7 +1,7 @@
 import { defineUserConfig, UserConfig, DefaultThemeOptions } from 'vuepress';
 
 const themeConfig: DefaultThemeOptions = {
-    repo: 'lucka-me/potori',
+    repo: 'lucka-me/potori-docs',
     locales: {
         '/': {
             selectLanguageText: 'Languages',

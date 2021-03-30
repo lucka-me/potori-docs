@@ -16,7 +16,7 @@ Potori will use following data of yours:
   - Timestamp  
     Regarded as the confirmation / result time of the nomination.
   - Photo URL  
-    Display photo in the UI.  
+    Display photo in the app.  
     Generate a short UID as the ID of Portal and identify them in mails.  
     The short UID will be used to query Brainstorming data and generate link to Brainstorming watermeter.
   - Intel Map URL  
