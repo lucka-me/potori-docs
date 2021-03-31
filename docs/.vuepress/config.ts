@@ -14,8 +14,6 @@ const themeConfig: DefaultThemeOptions = {
                     text: 'More',
                     children: [
                         { text: 'Contribute', link: '/contribute/' },
-                        { text: 'License', link: 'https://github.com/lucka-me/potori/blob/master/LICENSE' },
-                        { text: 'Changelog', link: 'https://github.com/lucka-me/potori/blob/master/CHANGELOG.md' },
                     ]
                 },
             ]
@@ -31,8 +29,6 @@ const themeConfig: DefaultThemeOptions = {
                     text: '了解更多',
                     children: [
                         { text: '贡献', link: '/zh/contribute/' },
-                        { text: '许可', link: 'https://github.com/lucka-me/potori/blob/main/LICENSE' },
-                        { text: '更新日志', link: 'https://github.com/lucka-me/potori/blob/main/CHANGELOG.md' },
                     ],
                 },
             ]
