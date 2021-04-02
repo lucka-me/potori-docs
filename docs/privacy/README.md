@@ -1,3 +1,7 @@
+---
+sidebar: auto
+---
+
 # Privacy
 Briefly, Potori would not collect any of your data. All of your data will be handled inside the app locally. The raw data of mails will not be stored and the extracted data will be stored locally. You can also sync your data with your own Google Drive (where only Potori can access), they are totally under your control.
 

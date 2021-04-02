@@ -1,3 +1,7 @@
+---
+sidebar: auto
+---
+
 # Contribute
 You're welcomed to contribute to Potori since we still have lots to improve, including:
 
