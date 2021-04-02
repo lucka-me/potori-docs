@@ -1,6 +1,8 @@
 # Privacy
 Briefly, Potori would not collect any of your data. All of your data will be handled inside the app locally. The raw data of mails will not be stored and the extracted data will be stored locally. You can also sync your data with your own Google Drive (where only Potori can access), they are totally under your control.
 
+Potori's use and transfer to any other app of information received from Google APIs will adhere to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
+
 We are trying to protect your privacy with my knowledge, if you have any suggestion, please feel free to [open an issue](https://github.com/lucka-me/potori/issues) or [contact us](../contribute#Contributors).
 
 ## Data Usage

@@ -1,6 +1,8 @@
 # 隐私
 简而言之，Potori不会收集您的任何数据。您的所有数据将在本地应用内进行处理。原始邮件数据将不会被保留，解析的数据将保存在本地。您也可以将数据同步至Google Drive中（只有Potori能够访问的位置），它们完全处于您的控制之下。
 
+Potori对于从Google API处获取的信息的使用和传输符合[Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes)的相关要求，包括有限使用的要求。
+
 我们尽力设法保护您的隐私，如果您有任何建议，欢迎[提出议题](https://github.com/lucka-me/potori/issues)或[与我们联系](../contribute#贡献者)。
 
 ## 数据使用
