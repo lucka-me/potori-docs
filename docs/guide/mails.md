@@ -1,19 +1,7 @@
----
-sidebar: auto
----
+# Process Mails
+For those mails related to nominations, the subjects and contents are generated from several templates, some keywords are used to filter mails and extract informations.
 
-# Usage
-This part will describe how to use Potori.
-
-## Load Data Files
-If you have saved data files (Nomination data file and Brainstorming data file) locally, you can open it to review your nominations without login.
-
-If you have uploaded data files before, Potori will try to download them from your Google Drive after login.
-
-## Process Mails
-For those mails related to Portal nominations, the subjects and contents are generated from several templates, some keywords are used to filter mails and extract informations.
-
-### Obtain Mails
+## Obtain Mails
 Potori will obtain mails with the following filters:
 
 - **Confirmation Mails**
@@ -33,7 +21,7 @@ You can also create rules with these filter to label your mails automatically in
 Ingress Prime uses localized templates, which makes it difficult to find the corrent filters. We are working on it.
 :::
 
-### Extract Informations
+## Extract Informations
 The contents of mails will be used to extract information of the nomination, browse [Data Usage](../privacy/#Data_Usage) for more details.
 
 As for the rejection mails, there are several templates for each rejection reason, and each one colud be identified by matching the keywords:
@@ -47,16 +35,3 @@ As for the rejection mails, there are several templates for each rejection reaso
 ::: warning
 Ingress Prime uses localized templates, which makes it difficult to find the corrent keywords. We are working on it.
 :::
-
-## Visualize
-Potori will display the information of nominations in cards, and display data and stastistics in the Dashboard view.
-
-The status, result time and rejection reason are editable, click the cards to open the *Details Dialog* and edit.
-
-## Import
-Potori can parse data from [Wayfarer API](https://wayfarer.nianticlabs.com/api/v1/vault/manage "Wayfarer API") and update the title and location of nominations. Click *Import* from menu to open the *Import Dialog*, paste the JSON code from Wayfarer API and click Import.
-
-## Save Data Files
-You can save the nomination data to your computer by clicking the *Save File* from menu, files named `Potori.json` and `bsdata.json` will be downloaded.
-
-The nomination data will **NOT** be uploaded to your Google Drive automatically. If you have login, you can upload the data by clicking the *Upload File* from menu.
