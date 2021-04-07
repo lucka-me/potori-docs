@@ -1,17 +1,14 @@
 # Manage Data
+Potori will store data locally, you can manage data in the Preferences.
 
 ## Nominations
+Potori will save nominations data in local database, you can export them to JSON file and import from JSON file, and also clear all nominations if necessary.
 
-### Import and Export
-If you have saved data files (Nomination data file and Brainstorming data file) locally, you can open it to review your nominations without login.
+### Import from Wayfarer JSON<Badge type="tip" text="Web" vertical="top"/>
+Potori can parse data from [Wayfarer API](https://wayfarer.nianticlabs.com/api/v1/vault/manage "Wayfarer API") and update the title and location of nominations.
 
-If you have uploaded data files before, Potori will try to download them from your Google Drive after login.
+### Sync with Google Drive
+You can sync your nominations data between devices and platforms with Google Drive. The data will be saved in a private folder where only Potori can access.
 
-You can save the nomination data to your computer by clicking the *Save File* from menu, files named `Potori.json` and `bsdata.json` will be downloaded.
-
-The nomination data will **NOT** be uploaded to your Google Drive automatically. If you have login, you can upload the data by clicking the *Upload File* from menu.
-
-### Import from Wayfarer JSON
-Potori can parse data from [Wayfarer API](https://wayfarer.nianticlabs.com/api/v1/vault/manage "Wayfarer API") and update the title and location of nominations. Click *Import* from menu to open the *Import Dialog*, paste the JSON code from Wayfarer API and click Import.
-
-## Brainstorming
+## Brainstorming<Badge type="tip" text="Web" vertical="top"/>
+The web app provides Brainstorming integration, it can query records from online database and save them in local database.

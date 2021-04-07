@@ -1,37 +1,35 @@
 # Process Mails
-For those mails related to nominations, the subjects and contents are generated from several templates, some keywords are used to filter mails and extract informations.
+For those mails related to nominations, the subjects and contents are generated from several templates. Potori uses some queries to fetch mails and some keywords to extract informations.
 
-## Obtain Mails
-Potori will obtain mails with the following filters:
+::: warning
+The following quries and keywords may be outdated, the latest ones used in Potori are available in [his repository](https://github.com/lucka-me/potori-umi) with related resourced.
+:::
+
+## Fetch Mails
+Potori will fetch mails with the following queries:
 
 - **Confirmation Mails**
-  - `from:ingress-support@nianticlabs.com Portal submission confirmation -edit -photo`
+  - `{from:ingress-support@nianticlabs.com from:ingress-support@google.com} {subject:"Portal submission confirmation" subject:"Ingress Portal Submitted"} -edit -photo`
   - `from:nominations@portals.ingress.com subject:("能量塔提交確認" OR "Portal申請の受領確認" OR "Portal submission confirmation") -AP`
 - **Acceptance Mails**
-  - `from:ingress-support@nianticlabs.com Portal review complete now available -edit -photo`
+  - `{from:ingress-support@nianticlabs.com from:ingress-support@google.com} {subject:"Portal review complete" subject:"Ingress Portal Live"} {"now available" "will be enabled"} -edit -photo`
   - `from:nominations@portals.ingress.com Intel Map AP`
 - **Rejection Mails**
-  - `from:ingress-support@nianticlabs.com Portal review complete reviewed -edit -photo`
+  - `{from:ingress-support@nianticlabs.com from:ingress-support@google.com} subject:{"Portal review complete" "Ingress Portal Rejected" "Ingress Portal Duplicate"} {reviewed duplicate} -edit -photo -AP`
   - `from:nominations@portals.ingress.com subject:("能量塔審查完畢" OR "Portal審査の完了" OR "Portal review complete") -AP`
 
 ::: tip
-You can also create rules with these filter to label your mails automatically in Gmail.
+You can also create rules with these queries to label your mails automatically in Gmail.
 :::
 ::: warning
 Ingress Prime uses localized templates, which makes it difficult to find the corrent filters. We are working on it.
 :::
 
 ## Extract Informations
-The contents of mails will be used to extract information of the nomination, browse [Data Usage](../privacy/#Data_Usage) for more details.
+The contents of mails will be used to extract information of the nomination:
 
-As for the rejection mails, there are several templates for each rejection reason, and each one colud be identified by matching the keywords:
+- Subject: Title of nomination
+- Body: Image (and ID), location and reject reasons
 
-| Reason | Keywords
-| :--- | :---
-| Duplicated | `duplicate of either an existing Portal`
-| Too Close | `too close to an existing Portal` `能量塔過近`
-| Undeclared | (Match neither of the keywords above)
-
-::: warning
-Ingress Prime uses localized templates, which makes it difficult to find the corrent keywords. We are working on it.
-:::
+## Manually Match
+For some result mails sent in late 2018, the image links are missing. Potori uses image link to generate a unique ID for each nomination, so you have to match the conformation mail manually. Tap the match button in Dashboard to match if it appears.
